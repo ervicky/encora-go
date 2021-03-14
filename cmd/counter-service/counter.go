@@ -47,7 +47,7 @@ func callDouble(v int) int {
 	// increase the global counter by one.
 	sc.Inc()
 
-	// stop returning double when counter reaches to counterLimit.
+	// stop returning value from the double(v) when counter reaches to limit.
 	if sc.Value() > int64(counterLimit) {
 		return v
 	}
