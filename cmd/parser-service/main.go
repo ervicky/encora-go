@@ -5,19 +5,6 @@ import (
 	"log"
 )
 
-func parse(v string) (*node, error) {
-	root := &node{}
-
-	// Parse here
-
-	return root, nil
-}
-
-type node struct {
-	Name     string  `json:"name"`
-	Children []*node `json:"children,omitempty"`
-}
-
 var examples = []string{
 	"[a,b,c]",
 	"[a[aa[aaa],ab,ac],b,c[ca,cb,cc[cca]]]",
